@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- Link a stylesheet to my document and set the title --->
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Computer Math</title>
+    </head>
+
+
+    <body>
+
+        <!--- make a vertical nav bar  --->
+        <ul id=navbar>
+
+            <li><a href="home.html">Home</a></li>
+            <li><a href="logic_gates.html">Logic Gates</a></li>
+            <li><a class=active href="half_adder.html">Half Adder</a></li>
+            <li><a href="full_adder.html">Full Adder</a></li>
+            <li><a href="subtraction.html">Subraction</a></li>
+
+        </ul>
+
+        <!--- Main content --->
+        <div class="content">
+
+            <h1>Now lets add small numbers.</h1>
+
+            <p>For us to use add two binary numbers we are going to need some logic gates. Again I have made a truth table and an image. It's is a little hard to explain so follow along with the image. When you are adding to binary numbers that are only one digit you have only four possible awnsers. 0+0=0. 0+1=1. 1+0=1. The last possibility is a little more complicated (1+1=?). 1+1 whould nomaly be 2 but we can't use 2. The awnser is actually really simple you add another digit so the awnser would be 10. This works the same as there being a 1s digit, 10s digit, a 100s digit and so on, but there is a 1s digit, a 2s digit, a 4s digit and so on.</p>
+
+            <!--- All the rows in the table have ids because of my javascript code --->
+
+            <table class="inline big">
+
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Sum</th>
+                    <th>Carry</th>
+                </tr>
+                <tr id="half_adder1" class="active">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr id="half_adder2">
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr id="half_adder3">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr id="half_adder4">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+
+            <img id="half_adder_img" class="inline" src="images/half_adder/1.png" alt="half adder diagram">
+
+        </div>
+
+        <!--- run my javascript after the content loads --->
+        <script src="scripts/half_adder.js"></script>
+    </body>
+</html>

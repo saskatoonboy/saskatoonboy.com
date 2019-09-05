@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- Link a stylesheet to my document and set the title --->
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Computer Math</title>
+    </head>
+
+
+    <body>
+
+        <!--- make a vertical nav bar with seelections within the page --->
+        <ul id=navbar>
+
+            <li><a href="home.html">Home</a></li>
+            <li><a class=active href="logic_gates.html">Logic Gates</a></li>
+            <li><a id="not_selection" class=section href="#not_gate">NOT Gate</a></li>
+            <li><a id="or_selection" class=section href="#or_gate">OR Gate</a></li>
+            <li><a id="and_selection" class=section href="#and_gate">AND Gate</a></li>
+            <li><a id="xor_selection" class=section href="#xor_gate">XOR Gate</a></li>
+            <li><a href="half_adder.html">Half Adder</a></li>
+            <li><a href="full_adder.html">Full Adder</a></li>
+            <li><a href="subtraction.html">Subraction</a></li>
+
+        </ul>
+
+        <!--- Main content --->
+        <div class="content">
+
+            <h1>The building blocks.</h1>
+
+            <p>Logic gates are how the computer manipulates numbers (remember that computers only use 1 and 0). There are 4 common logic gates that are explained below. The NOT, OR, AND, and XOR gates. Each gate has table below the explanation that table is called a truth table it repesents what the output would be if depending on the inputs. If you click on a row in the truth table then the image with change to display that rows data.</p>
+
+            <h2 id=not_gate>NOT Gate</h2>
+
+            <p>The NOT gate is also sometimes called a inverter. It takes one input and outputs the opposite value. So if the input is 1 the but is 0 and vice versa.</p>
+
+            <!--- All the rows in the table have ids because of my javascript code --->
+
+            <table class="big inline">
+                <tr>
+                    <th>A</th>
+                    <th>Q</th>
+                </tr>
+                <tr id="not1" class="active">
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr id="not2">
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </table>
+
+            <img id="not_img" class="inline" src="images/not_gate/1.png" alt="not gate symbol">
+
+
+
+            <h2 id=or_gate>OR Gate</h2>
+
+            <p>The OR gate does pretty much exactly what it sounds like. There are two inputs. If atleast one of them is 1 then the output will be 1.</p>
+
+            <!--- All the rows in the table have ids because of my javascript code --->
+
+            <table class="big inline">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Q</th>
+                </tr>
+                <tr id="or1" class="active">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr id="or2">
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr id="or3">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr id="or4">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <img id="or_img" class="inline" src="images/or_gate/1.png" alt="or gate symbol">
+
+
+
+            <h2 id=and_gate>AND Gate</h2>
+
+            <p>An AND gate is also pretty much exactly what is sounds like. There are two inputs. If both inputs are 1 then the output is 1</p>
+
+            <!--- All the rows in the table have ids because of my javascript code --->
+
+            <table class="big inline">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Q</th>
+                </tr>
+                <tr id="and1" class="active">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr id="and2">
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr id="and3">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr id="and4">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <img id="and_img" class="inline" src="images/and_gate/1.png" alt="and gate symbol">
+
+
+
+            <h2 id=xor_gate>XOR Gate</h2>
+
+            <p>An XOR (Exclusive OR) gate is alot more complicated than the other gates on this page. It has two inputs. When one input and <strong>only</strong> one input is 1 then the output is 1.</p>
+
+            <!--- All the rows in the table have ids because of my javascript code --->
+
+            <table class="big inline">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Q</th>
+                </tr>
+                <tr id="xor1" class="active">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr id="xor2">
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr id="xor3">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr id="xor4">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </table>
+
+            <img id="xor_img" class="inline" src="images/xor_gate/1.png" alt="xor gate symbol">
+
+        </div>
+
+        <!--- run my javascript after the content loads --->
+        <script src="scripts/logic_gates.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- Link a stylesheet to my document and set the title --->
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Computer Math</title>
+    </head>
+
+
+    <body>
+
+        <!--- make a vertical nav bar  --->
+        <ul id=navbar>
+
+            <li><a href="home.html">Home</a></li>
+            <li><a href="logic_gates.html">Logic Gates</a></li>
+            <li><a href="half_adder.html">Half Adder</a></li>
+            <li><a class=active href="full_adder.html">Full Adder</a></li>
+            <li><a href="subtraction.html">Subraction</a></li>
+
+        </ul>
+
+        <!--- Main content --->
+        <div class="content">
+
+            <h1>Now for the big additions.</h1>
+
+            <p>A half adder can only add numbers with one digit but we want to be able to add numbers with many more digits than that. So we need a full adder. A full adder can add two digits together and a carry input. The carry input alows you to connect multiple adders together and add multiple digits at once.</p>
+
+            <!--- All the rows in the table have ids because of my javascript code --->
+
+            <table class="big inline">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>Carry In</th>
+                    <th>Sum</th>
+                    <th>Carry Out</th>
+                </tr>
+                <tr id="full_adder1" class="active">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr id="full_adder2">
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr id="full_adder3">
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr id="full_adder4">
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr id="full_adder5">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr id="full_adder6">
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr id="full_adder7">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr id="full_adder8">
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <img id="full_adder_img" class="inline" src="images/full_adder/1.png" alt="Full adder diagram">
+
+        </div>
+
+        <!--- run my javascript after the content loads --->
+        <script src="scripts/full_adder.js"></script>
+    </body>
+</html>

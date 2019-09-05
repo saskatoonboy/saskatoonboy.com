@@ -1,0 +1,139 @@
+<!---------------------------------------------------->
+<!--- Eric James                                   --->
+<!--- Computer Science 20                          --->
+<!--- June, 4th 2019                               --->
+<!---                                              --->
+<!--- Website                                      --->
+<!--- To make a website from scratch               --->
+<!---------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- Link a stylesheet to my document and set the title --->
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Computer Math</title>
+    </head>
+
+
+    <body>
+
+        <!--- make a vertical nav bar  --->
+        <ul id=navbar>
+
+            <li><a class=active href="home.html">Home</a></li>
+            <li><a href="logic_gates.html">Logic Gates</a></li>
+            <li><a href="half_adder.html">Half Adder</a></li>
+            <li><a href="full_adder.html">Full Adder</a></li>
+            <li><a href="subtraction.html">Subraction</a></li>
+
+        </ul>
+
+        <!--- Main content --->
+        <div class="content">
+
+            <h1>How Computer's Do Math.</h1>
+
+            <p>The simplest of math, math that you and I can do in an instant, can be very difficult for a computer. This is why we have to teach them. Computers think of numbers differently than we do. Our numbers start with one digit then at ten we start using two digits etcetera. We have ten digits total (0, 1, 2, 3, 4, 5, 6, 7, 8, and 9) this number system is called decimal. Computers use a system called binary. Binary uses only two digits (0 and 1).
+
+            <table>
+
+                <tr>
+                    <th>Decimal</th>
+                    <th>Binary</th>
+                </tr>
+
+                <tr>
+                    <td>0</td>
+                    <td>0000</td>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>0001</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>0010</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>0011</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>0100</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>0101</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>0110</td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>0111</td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>1000</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>1001</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>1010</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td>1011</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>1100</td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>1101</td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>1110</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>1111</td>
+                </tr>
+
+            </table>
+
+            <div class=converter>
+                <input id="text1" class="big" placeholder="Number"> <!--- This allows my javascript to take inputs --->
+                <button id="btn1" class="big">Convert</button> <!-- This tells my javascript when to run --->
+                <p id="converter_output"></p>
+            </div>
+        </div>
+
+        <!--- run my javascript after the content loads --->
+        <script src="scripts/home.js"></script>
+    </body>
+</html>

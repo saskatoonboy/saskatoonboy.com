@@ -1,0 +1,192 @@
+h1 {
+
+    text-align: center; /* Titles are centred on the screen */
+
+}
+
+body {
+
+    margin: 0px;
+    font-family: "Courier New", monospace;
+    background-color: #b4b960;
+    height: 2500px
+
+    /* set the font, background color and remove the magin so that the nav bar is touching the side of the window */
+
+}
+
+li a {
+
+    display: block;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;
+
+    /* format list items with anchors to fit in a vertical nav bar */
+
+}
+
+li a.active {
+
+    background-color: #7a1e17;
+    color: #fff;
+
+    /* change the colors of an active item in a nav bar */
+
+}
+
+li a.section {
+
+    font-size: 1em;
+    height: 25px;
+    margin-left: 25px;
+
+    /* format selection items to be smaller and indented compaired to page items in the nav bar */
+
+}
+
+li a:hover:not(.active) {
+
+    background-color: #aa897d;
+    color: #fff;
+
+    /* when hovering over a list item with and anchor that is not of the active class then format the colors */
+
+}
+
+#navbar {
+
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    background-color: #a0984d;
+    width: 25%;
+
+    /* format the color margins and size of the nav bar list */
+
+}
+
+.converter {
+
+    position: absolute;
+    top: 65%;
+    left: 30%;
+
+    /* position the binary converter items properly */
+
+}
+
+.signed_magnitude_converter {
+
+    position: absolute;
+    top: 45%;
+    left: 45%;
+
+    /* position the binary converter items properly */
+
+}
+
+.ones_complement_converter {
+
+    position: absolute;
+    top: 130%;
+    left: 45%;
+
+    /* position the binary converter items properly */
+
+}
+
+.twos_complement_converter {
+
+    position: absolute;
+    top: 200%;
+    left: 45%;
+
+    /* position the binary converter items properly */
+
+}
+
+#converter_output, #signed_magnitude_converter_output, #ones_complement_converter_output, #twos_complement_converter_output{
+
+    font-size: 2em;
+    font-weight: bold;
+
+    /* enlarge and bold the binary output from the converters */
+
+}
+
+.big {
+
+    font-size: 2em;
+
+    /* class for doubling the size of an element */
+
+}
+
+td {
+
+    border: 1px solid black;
+
+    /* put a border around the cells in a table */
+
+}
+
+.active {
+
+    background-color: #474828;
+    color: #fff;
+
+    /* assign the color of any active element */
+
+}
+
+#not_img, #or_img, #and_img, #xor_img, #half_adder_img, #full_adder_img {
+
+    height: 10em;
+    position: absolute;
+    padding-left: 10px;
+
+    /* set the size, padding and positioning of the images */
+
+}
+
+#full_adder_img {
+
+    height: 20em;
+
+    /* make the full adder image twice the size of the other images */
+
+}
+
+.inline {
+
+    display: inline;
+
+    /* class to make elements be inline */
+
+}
+
+.float_left {
+
+    float: left;
+    padding-right: 10px;
+
+    /* class for floating an element to the left */
+
+}
+
+.content {
+
+    margin-left:25%;
+    padding:1px 16px;
+
+    /* formating to make sure the main content and the nav bar do not overlap */
+
+}
