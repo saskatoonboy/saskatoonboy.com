@@ -101,7 +101,9 @@ header nav ul li .active {
 
 img {
 
-    width: 600px;
-    
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
