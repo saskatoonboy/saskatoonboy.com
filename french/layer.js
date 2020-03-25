@@ -7,14 +7,16 @@ class Layer {
         this.height = height;
         this.width = width;
         this.visible = true;
+
+        layers.push(this);
     }
 
-    newImage() { 
-        this.drawables.push();
+    newImage(x, y, img) { 
+        this.drawables.push(new Image(x, y, img));
     }
 
     newTextBox() {
-        this.drawables.push();
+        this.drawables.push(new TextBox());
     }
 
     show() {
@@ -37,7 +39,7 @@ class Layer {
         if (this.visible) {
             fill(this.background);
             rect(this.pos.x, this.pos.y, this.width, this.height);
-            for (let drawable of drawables) {
+            for (let drawable of this.drawables) {
                 drawable.display();
             }
         }
