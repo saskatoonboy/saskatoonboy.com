@@ -99,11 +99,23 @@ header nav ul li .active {
 
 }
 
-img {
+.center {
 
     display: block;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+img {
+
+    width: 100%;
+
+}
+
+.side {
+    width: 30%;
+    display: inline-block;
+    position:relative; margin-bottom:5px; width:302px;
 }
